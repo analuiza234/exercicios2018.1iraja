@@ -7,22 +7,21 @@
     <title>Document</title>
 </head>
 <body>
-    <label>Digite um valor</label>
+    <label>Digite o valor</label>
     <input type="text" name="valor" id="valor">
     <button onclick="parImpar()">ok</button>
     <div id="saida"></div>
 </body>
 </html>
 <script>
-    function parImpar(){
-        var num = document.getElementById("valor").value
-        if (num % 2 == 0){
-            //document.write("Par");
-            //alert("Par");
-            document.getElementById("saida").innerHTML = "PAR";
-        } else {
-            document.getElementById("saida").innerHTML = "IMPAR";
-        }
+function parImpar(){
+    var num = document.getElementById("valor").value 
+    if(num % 2 == 0){
+       document.getElementById("saida").innerHTML = "par";
     }
+    else{
+        document.getElementById("saida").innerHTML = "impar";
+    }
+}
 
 </script>

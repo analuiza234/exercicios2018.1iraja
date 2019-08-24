@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <label>Informe o nome</label>
+    <input type="text" name="nome" id="nome">
+    <!--<label>Informe o sexo</label>-->
+    <!--<input type="text" name="sexo" id="sexo" onchange="verificar()">-->
+    <select name="sexo" id="sexo">
+    <option>sexo</option>
+    <option value="M">Masculino</option>
+    <option value="F">Feminino</option>
+</select>
+    <button onclick="verificar()">ok</button>
+    <div id="saida"></div>
+</body>
+</html>
+<script>
+function verificar(){
+    var sexo = document.getElementById("sexo").value;
+    var nome = document.getElementById("nome").value;
+    if(sexo == "m" ){
+       document.getElementById("saida").innerHTML = "llmo Sr"+ nome;
+    }
+    else{
+        document.getElementById("saida").innerHTML = "llma Sra "+ nome;
+    }
+}
+
+</script>
